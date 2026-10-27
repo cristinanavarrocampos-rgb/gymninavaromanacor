@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="es" data-palette="esmeralda">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gimnasio en Palma, Magaluf y Manacor | Happygym · Sin permanencia</title>
+<meta name="description" content="Happygym: gimnasios en Mallorca con máquinas de última generación, entrenamiento personal y clases. Magaluf y Palma 24h. Sin matrícula y sin permanencia. Llama al 971 778 155 o reserva tu cita.">
+<meta property="og:title" content="Happygym · Gimnasios en Palma, Magaluf y Manacor">
+<meta property="og:image" content="https://static.wixstatic.com/media/f5b483_f284972b91f745ff9287efe07f4a8aae~mv2_d_4714_3143_s_4_2.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/happygym.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Happygym",
+  "url": "https://www.happygym.es",
+  "telephone": "+34971778155",
+  "sameAs": ["https://www.instagram.com/happygym_mallorca/","https://www.facebook.com/happygymMallorca/","https://www.youtube.com/channel/UCQmqCgBbAMGnLrCP5BWC04A"],
+  "subOrganization": [
+    {"@type":"HealthClub","name":"Happygym Manacor","telephone":"+34971778155",
+     "address":{"@type":"PostalAddress","streetAddress":"Carrer de Don Joan d'Àustria 5","postalCode":"07500","addressLocality":"Manacor","addressRegion":"Illes Balears","addressCountry":"ES"},
+     "openingHours":["Mo-Fr 06:00-23:00","Sa 09:00-17:00","Su 09:00-14:00"]},
+    {"@type":"HealthClub","name":"Happygym Magaluf 24h","telephone":"+34971778155",
+     "address":{"@type":"PostalAddress","streetAddress":"C.C. La Vila, Av. Carlos Sáenz de Tejada 8","postalCode":"07181","addressLocality":"Magaluf, Calvià","addressRegion":"Illes Balears","addressCountry":"ES"},
+     "openingHours":"Mo-Su 00:00-24:00"}
+  ]
+}
+</script>
+<style>
+/* ===== Paletas (la elegida por defecto: Esmeralda & Cobre) ===== */
+:root,[data-palette="esmeralda"]{
+  --deep:#061C18; --brand:#0C4237; --brand-2:#135A4A;
+  --accent:#DDA582; --accent-2:#B97A59; --accent-ink:#1B0F09;
+  --paper:#F5F6F3; --line:#DDE2DE; --ink:#0A1E1A; --muted:#4D5E59;
+  --glow:rgba(221,165,130,.35);
+}
+[data-palette="burdeos"]{
+  --deep:#1A070D; --brand:#4E1220; --brand-2:#6B1A2D;
+  --accent:#EBBBA9; --accent-2:#C98E7A; --accent-ink:#2A0B12;
+  --paper:#FAF7F6; --line:#EADFDC; --ink:#22090F; --muted:#6A4F55;
+  --glow:rgba(235,187,169,.35);
+}
+[data-palette="grafito"]{
+  --deep:#0C0F14; --brand:#1A2029; --brand-2:#27303C;
+  --accent:#FF7A66; --accent-2:#E2574A; --accent-ink:#22100D;
+  --paper:#F5F6F7; --line:#DEE1E5; --ink:#11151B; --muted:#535B66;
+  --glow:rgba(255,122,102,.32);
+}
+:root{
+  --white:#fff; --radius:6px;
+  --display:"Big Shoulders Display", Impact, "Arial Narrow", sans-serif;
+  --text:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --max:1240px;
+  --img:"https://static.wixstatic.com/media/";
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6;transition:background .4s}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:.92;letter-spacing:.005em;margin:0;text-transform:uppercase}
+h2{font-size:clamp(44px,6.4vw,88px)}
+h3{font-size:clamp(26px,2.6vw,34px);font-weight:800}
+p{margin:0}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:56ch}
+
+/* Buttons with real depth */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:var(--radius);font-family:var(--text);font-weight:800;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .15s,background .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-accent{background:linear-gradient(180deg,var(--accent),var(--accent-2));color:var(--accent-ink);box-shadow:0 4px 0 color-mix(in srgb,var(--accent-2) 60%,#000),0 14px 30px -8px var(--glow)}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:0 6px 0 color-mix(in srgb,var(--accent-2) 60%,#000),0 20px 40px -8px var(--glow)}
+.btn-accent:active{transform:translateY(3px);box-shadow:0 1px 0 color-mix(in srgb,var(--accent-2) 60%,#000)}
+.btn-line{border-color:rgba(255,255,255,.4);color:var(--white);backdrop-filter:blur(6px);background:rgba(255,255,255,.06)}
+.btn-line:hover{border-color:var(--white);background:rgba(255,255,255,.14)}
+.btn-brand{background:var(--brand);color:var(--white);box-shadow:0 4px 0 var(--deep)}
+.btn-brand:hover{transform:translateY(-2px);background:var(--brand-2)}
+.btn-brand:active{transform:translateY(3px);box-shadow:0 1px 0 var(--deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--white)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+
+/* Header */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;color:var(--white);transition:background .3s,box-shadow .3s}
+.top.solid{background:color-mix(in srgb,var(--deep) 92%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:78px}
+.logo{font-family:var(--display);font-weight:900;font-size:32px;letter-spacing:.03em;text-decoration:none;line-height:1}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;opacity:.85}
+.nav a:hover{opacity:1;color:var(--accent)}
+.top-actions{display:flex;gap:14px;align-items:center}
+.phone-link{display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;font-size:15px;white-space:nowrap}
+.phone-link svg{width:18px;height:18px;color:var(--accent)}
+.top .btn{min-height:46px;padding:0 20px;font-size:15px}
+@media (max-width:1060px){.nav{display:none}.top-actions{margin-left:auto}}
+@media (max-width:640px){.phone-link span{display:none}.top .btn-accent{display:none}.logo{font-size:28px}}
+
+/* ===== HERO with 3D dumbbell ===== */
+.hero{position:relative;min-height:100vh;min-height:100svh;color:var(--white);overflow:hidden;display:flex;align-items:center;background:var(--deep)}
+.hero-bg{position:absolute;inset:-6% -2%;background:center/cover no-repeat;background-image:url("https://static.wixstatic.com/media/f5b483_f284972b91f745ff9287efe07f4a8aae~mv2_d_4714_3143_s_4_2.jpg/v1/fill/w_2000,h_1333,al_c,q_80,enc_auto/sala-mancuernas.jpg");filter:grayscale(.35) contrast(1.05);will-change:transform}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:
+  radial-gradient(70% 80% at 78% 45%,transparent 0%,color-mix(in srgb,var(--deep) 55%,transparent) 55%),
+  linear-gradient(90deg,var(--deep) 0%,color-mix(in srgb,var(--deep) 88%,transparent) 38%,color-mix(in srgb,var(--brand) 45%,transparent) 100%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:180px;z-index:1;background:linear-gradient(transparent,var(--deep))}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;width:100%;padding-top:120px;padding-bottom:110px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;color:var(--accent);margin-bottom:26px}
+.kicker i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--glow)}
+.hero h1{font-size:clamp(66px,10vw,164px);line-height:.84}
+.hero h1 span{display:block}
+/* extruded 3D type */
+.hero h1 .l1{color:var(--white);text-shadow:1px 1px 0 #c9cfcc,2px 2px 0 #b5bcb9,3px 3px 0 #a3aaa7,4px 4px 0 #8d9592,5px 5px 0 #78807d,6px 6px 0 #636b68,7px 7px 18px rgba(0,0,0,.6)}
+.hero h1 .l2{background:linear-gradient(180deg,var(--accent) 20%,var(--accent-2) 95%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(1px 1px 0 color-mix(in srgb,var(--accent-2) 70%,#000)) drop-shadow(2px 2px 0 color-mix(in srgb,var(--accent-2) 60%,#000)) drop-shadow(3px 3px 0 color-mix(in srgb,var(--accent-2) 50%,#000)) drop-shadow(4px 4px 0 color-mix(in srgb,var(--accent-2) 40%,#000)) drop-shadow(6px 8px 14px rgba(0,0,0,.55))}
+.hero-copy p{margin-top:32px;font-size:clamp(18px,1.6vw,21px);max-width:44ch;color:rgba(255,255,255,.84)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.stage3d{position:relative;height:min(62vh,560px)}
+#dumbbell{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab}
+#dumbbell:active{cursor:grabbing}
+.stage3d .floor{position:absolute;left:12%;right:12%;bottom:4%;height:44px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent);filter:blur(6px)}
+.stage3d .hint{position:absolute;right:0;bottom:-6px;font-size:13px;color:rgba(255,255,255,.55)}
+.badge24{position:absolute;left:0;top:14%;z-index:3;transform:perspective(600px) rotateY(16deg) rotateX(6deg);background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);border-radius:12px;padding:16px 20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.badge24 strong{display:block;font-family:var(--display);font-size:46px;line-height:1;color:var(--accent)}
+.badge24 small{font-size:13px;font-weight:700;color:rgba(255,255,255,.85)}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:110px;padding-bottom:70px}
+  .stage3d{height:300px;order:-1;margin:0 -24px -40px}
+  .badge24{top:auto;bottom:24px;left:24px}
+  .stage3d .hint{display:none}
+}
+
+/* Promises */
+.promises{background:var(--deep);color:var(--white);position:relative;z-index:2}
+.promises ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.promises li{padding:28px 24px;border-left:1px solid rgba(255,255,255,.1);display:flex;gap:14px;align-items:center;font-weight:700;font-size:16px;line-height:1.3}
+.promises li:first-child{border-left:0;padding-left:0}
+.promises svg{width:26px;height:26px;color:var(--accent);flex:none}
+@media (max-width:900px){.promises ul{grid-template-columns:1fr 1fr}.promises li{padding:20px 12px;border-left:0;border-top:1px solid rgba(255,255,255,.1)}.promises li:nth-child(-n+2){border-top:0}.promises li:first-child{padding-left:12px}}
+
+/* Sections */
+section{scroll-margin-top:80px}
+.sec{padding:120px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:64px}
+@media (max-width:900px){.sec{padding:80px 0}.sec-head{grid-template-columns:1fr;gap:20px;margin-bottom:40px}}
+
+/* Service cards with 3D tilt */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;perspective:1200px}
+.svc{position:relative;border-radius:10px;overflow:hidden;background:var(--deep);color:var(--white);min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;transform-style:preserve-3d;transition:transform .25s ease-out,box-shadow .25s;box-shadow:0 30px 50px -30px rgba(0,0,0,.5)}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateZ(0) scale(1.08);transition:transform .4s}
+.svc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,color-mix(in srgb,var(--deep) 92%,transparent) 78%)}
+.svc .body{position:relative;z-index:2;padding:26px 24px 28px;transform:translateZ(50px)}
+.svc h3{color:var(--white);font-size:clamp(26px,2.3vw,32px);overflow-wrap:anywhere}
+.svc p{margin-top:10px;font-size:15px;color:rgba(255,255,255,.8)}
+.svc .more{display:inline-flex;margin-top:18px;font-weight:800;font-size:15px;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:2px}
+.svc .shine{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.22),transparent 45%);opacity:0;transition:opacity .25s}
+.svc:hover .shine{opacity:1}
+@media (max-width:1060px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.services{grid-template-columns:1fr}.svc{min-height:360px}}
+
+/* 3D gallery ring */
+.gallery{background:var(--deep);color:var(--white);overflow:hidden}
+.gallery .sec-head .lead{color:rgba(255,255,255,.75)}
+.ring-stage{position:relative;height:440px;perspective:1700px;perspective-origin:50% 40%;touch-action:pan-y;user-select:none;cursor:grab}
+.ring-stage:active{cursor:grabbing}
+.ring{position:absolute;left:50%;top:30px;width:380px;height:260px;margin-left:-190px;transform-style:preserve-3d}
+.ring figure{position:absolute;inset:0;margin:0;border-radius:10px;overflow:hidden;backface-visibility:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.8);border:1px solid rgba(255,255,255,.1)}
+.ring img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ring figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;font-weight:700;font-size:14px;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.ring-floor{position:absolute;left:10%;right:10%;bottom:40px;height:60px;border-radius:50%;background:radial-gradient(closest-side,var(--glow),transparent);filter:blur(10px)}
+.ring-ctrl{display:flex;justify-content:center;gap:12px;margin-top:8px}
+.ring-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.05);color:var(--white);cursor:pointer;display:grid;place-items:center}
+.ring-ctrl button:hover{border-color:var(--accent);color:var(--accent)}
+.ring-ctrl svg{width:20px;height:20px}
+@media (max-width:640px){.ring-stage{height:330px}.ring{width:250px;height:170px;margin-left:-125px}}
+
+/* Image band with parallax */
+.band{position:relative;min-height:480px;overflow:hidden;display:flex;align-items:flex-end;background:var(--deep)}
+.band-img{position:absolute;inset:-15% 0;background:center/cover no-repeat;background-image:url("https://static.wixstatic.com/media/f5b483_8af4dd77797d4e1395105b196fed37fa~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_2000,h_1100,al_c,q_80,enc_auto/sala.jpg");will-change:transform}
+.band::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,color-mix(in srgb,var(--deep) 92%,transparent),color-mix(in srgb,var(--brand) 35%,transparent))}
+.band .wrap{position:relative;z-index:2;color:var(--white);padding-top:90px;padding-bottom:80px;width:100%}
+.band blockquote{margin:0;font-family:var(--display);font-weight:900;font-size:clamp(40px,5.6vw,80px);line-height:.95;text-transform:uppercase;max-width:15ch}
+.band blockquote span{color:var(--accent)}
+.band p{margin-top:22px;color:rgba(255,255,255,.82);max-width:48ch}
+
+/* Pricing */
+.plans{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px;align-items:stretch;perspective:1400px}
+.plan{border:1px solid var(--line);background:var(--white);border-radius:10px;padding:36px 32px;display:flex;flex-direction:column;transform-style:preserve-3d;transition:transform .25s ease-out,box-shadow .25s;box-shadow:0 24px 40px -30px rgba(0,0,0,.35)}
+.plan > *{transform:translateZ(20px)}
+.plan h3{font-size:30px}
+.plan .price{font-family:var(--display);font-weight:900;font-size:78px;line-height:1;margin:22px 0 4px}
+.plan .price small{font-family:var(--text);font-size:16px;font-weight:700;color:var(--muted);margin-left:4px}
+.plan .note{font-size:14px;color:var(--muted)}
+.plan ul{list-style:none;padding:0;margin:26px 0 32px;display:grid;gap:12px}
+.plan li{display:flex;gap:10px;font-size:16px;line-height:1.4}
+.plan li svg{width:20px;height:20px;flex:none;color:var(--brand-2);margin-top:1px}
+.plan .btn{margin-top:auto}
+.plan.featured{background:linear-gradient(160deg,var(--brand-2),var(--deep));color:var(--white);border-color:transparent;box-shadow:0 40px 70px -30px color-mix(in srgb,var(--deep) 80%,transparent)}
+.plan.featured .note{color:rgba(255,255,255,.75)}
+.plan.featured li svg{color:var(--accent)}
+.plan.featured .price{background:linear-gradient(180deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.plan.featured .price small{color:rgba(255,255,255,.7);-webkit-text-fill-color:rgba(255,255,255,.7)}
+.plan .badge{align-self:flex-start;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.plan .price.ask{font-size:54px;margin-top:30px}
+@media (max-width:980px){.plans{grid-template-columns:1fr}}
+
+/* Centers */
+.centers-sec{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.centers{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.center{padding:36px 32px 36px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:18px}
+.center + .center{padding-left:32px}
+.center:last-child{border-right:0;padding-right:0}
+.center .flag{font-weight:800;font-size:14px;color:var(--brand-2);display:flex;gap:8px;align-items:center}
+.center .flag i{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--glow);display:inline-block}
+.center h3{font-size:48px}
+.center address{font-style:normal;color:var(--muted);line-height:1.5}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.hours td:last-child{text-align:right;font-weight:800;white-space:nowrap}
+.center-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:8px}
+.center-actions .btn{min-height:46px;padding:0 16px;font-size:15px}
+@media (max-width:980px){.centers{grid-template-columns:1fr}.center,.center + .center{padding:32px 0;border-right:0;border-bottom:1px solid var(--line)}}
+
+/* Booking */
+.book{position:relative;color:var(--white);background:radial-gradient(90% 70% at 85% 10%,var(--brand-2),transparent 60%),var(--deep);overflow:hidden}
+.book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.book .lead{color:rgba(255,255,255,.8);margin-top:24px}
+.direct{margin-top:40px;display:grid;gap:14px}
+.direct a{display:flex;align-items:center;gap:16px;text-decoration:none;padding:18px 20px;border:1px solid rgba(255,255,255,.18);border-radius:10px;background:rgba(255,255,255,.04);transition:border-color .2s,transform .2s}
+.direct a:hover{border-color:var(--accent);transform:translateX(4px)}
+.direct svg{width:28px;height:28px;color:var(--accent);flex:none}
+.direct strong{display:block;font-family:var(--display);font-size:32px;font-weight:800;line-height:1;letter-spacing:.01em}
+.direct span{font-size:14px;opacity:.75}
+.form{background:var(--white);color:var(--ink);border-radius:14px;padding:40px;box-shadow:0 50px 90px -30px rgba(0,0,0,.7);transform:perspective(1400px) rotateY(-4deg) rotateX(2deg);transform-origin:left center;transition:transform .5s}
+.form:focus-within,.form:hover{transform:none}
+.form h3{font-size:34px;margin-bottom:6px}
+#booking > p:not(.legal),.done > p{color:var(--muted);margin-bottom:26px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label,.field legend{font-weight:800;font-size:14px}
+.field input,.field select{font:inherit;font-size:16px;padding:14px;border:1.5px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);width:100%}
+.field input:focus,.field select:focus{outline:none;border-color:var(--brand-2);background:var(--white)}
+.field .err{color:#B3261E;font-size:13px;display:none}
+.field.invalid input,.field.invalid select{border-color:#B3261E}
+.field.invalid .err{display:block}
+fieldset.field{border:0;padding:0;margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.chips input{position:absolute;left:0;top:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+.chips label{font-weight:700;font-size:15px;padding:10px 18px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;background:var(--paper)}
+.chips input:checked + label{background:var(--brand);border-color:var(--brand);color:var(--white)}
+.chips input:focus-visible + label{outline:3px solid var(--accent);outline-offset:2px}
+.form .btn-brand{width:100%;margin-top:8px;min-height:58px;font-size:17px}
+.legal{font-size:13px;color:var(--muted);margin-top:14px}
+.done{display:none}
+.done.show{display:block}
+.done h3{color:var(--brand-2)}
+.summary{margin:22px 0;padding:20px;background:var(--paper);border-left:4px solid var(--accent);border-radius:var(--radius);font-size:15px;line-height:1.7}
+.done .btns{display:grid;gap:10px}
+@media (max-width:980px){.book .wrap{grid-template-columns:1fr;gap:48px}.form{padding:28px 22px;transform:none}}
+@media (max-width:520px){.grid2{grid-template-columns:1fr;gap:0}}
+
+/* FAQ */
+.faq{max-width:880px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 48px 26px 0;font-weight:800;font-size:19px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;border-right:2.5px solid var(--brand-2);border-bottom:2.5px solid var(--brand-2);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq details p{padding:0 0 26px;color:var(--muted);max-width:66ch}
+
+/* Final CTA */
+.final{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--accent),var(--accent-2));color:var(--accent-ink);padding:100px 0}
+.final .wrap{position:relative;display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:32px}
+.final h2{font-size:clamp(52px,8vw,120px);max-width:12ch}
+.final .btns{display:flex;flex-wrap:wrap;gap:14px}
+.final .btn-brand{background:var(--deep)}
+.final .btn-ghost{background:transparent;border-color:var(--accent-ink);color:var(--accent-ink)}
+footer{background:var(--deep);color:rgba(255,255,255,.75);padding:72px 0 120px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{color:var(--white);font-size:15px;margin:0 0 14px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer .logo{color:var(--white);display:inline-block;margin-bottom:16px}
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:grid;place-items:center}
+.social svg{width:18px;height:18px}
+.copy{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:13px}
+@media (max-width:900px){footer .cols{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){footer .cols{grid-template-columns:1fr}}
+
+/* Mobile action bar */
+.actionbar{display:none}
+@media (max-width:760px){
+  .actionbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--deep) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.1)}
+  .actionbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:var(--radius);text-decoration:none;font-weight:800;font-size:13px;color:var(--white);border:1px solid rgba(255,255,255,.18)}
+  .actionbar a svg{width:20px;height:20px}
+  .actionbar a.primary{background:linear-gradient(180deg,var(--accent),var(--accent-2));color:var(--accent-ink);border-color:transparent;flex-direction:row;font-size:15px;gap:8px}
+}
+
+/* Palette switcher — solo para presentar al cliente */
+.palette{position:fixed;right:16px;bottom:16px;z-index:70;display:flex;align-items:center;gap:10px;padding:8px 12px 8px 14px;border-radius:999px;background:rgba(20,20,20,.82);backdrop-filter:blur(10px);color:#fff;font-size:13px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.palette button{width:28px;height:28px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.palette button[aria-pressed="true"]{border-color:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.3)}
+.palette .p1{background:linear-gradient(135deg,#0C4237 50%,#DDA582 50%)}
+.palette .p2{background:linear-gradient(135deg,#4E1220 50%,#EBBBA9 50%)}
+.palette .p3{background:linear-gradient(135deg,#1A2029 50%,#FF7A66 50%)}
+@media (max-width:760px){.palette{bottom:92px}}
+@media print{.palette,.actionbar{display:none}}
+
+/* Load moment */
+@keyframes rise{from{transform:translateY(46px);opacity:0}to{transform:none;opacity:1}}
+.hero h1 .l1,.hero h1 .l2{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 .l2{animation-delay:.14s}
+</style>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M8 2.5v4M16 2.5v4M3 10h18M8 14.5h3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2.5 4 5.5v6c0 5 3.4 9 8 10.5 4.6-1.5 8-5.5 8-10.5v-6z M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.8-9.8M17 6l3 3M14.5 8.5l2 2"/></g></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3A22 22 0 0 0 14.6 2C12.2 2 10.5 3.5 10.5 6.2v2.3H8v3.6h2.5V22H14v-9.9h2.7l.4-3.6z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12a31 31 0 0 0 .4 3.8 3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15.2V8.8l5.2 3.2z"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Happygym, inicio">HAPPY<span>GYM</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicios">Entrenamiento</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#cuotas">Cuotas</a>
+      <a href="#centros">Centros</a>
+      <a href="https://happy-gym.provis.es/Login">Área de socios</a>
+    </nav>
+    <div class="top-actions">
+      <a class="phone-link" href="tel:+34971778155"><svg><use href="#i-phone"/></svg><span>971 778 155</span></a>
+      <a class="btn btn-accent" href="#reservar">Reservar cita</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" id="heroBg" role="img" aria-label="Zona de mancuernas de Happygym"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker"><i></i>Palma · Magaluf · Manacor</span>
+      <h1 id="hero-title"><span class="l1">Entrena fuerte.</span><span class="l2">Vive mejor.</span></h1>
+      <p>Salas amplias, máquinas de última generación y un equipo de profesionales que te acompaña desde el primer día. Sin matrícula. Sin permanencia.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="#reservar"><svg><use href="#i-cal"/></svg>Reserva tu visita gratuita</a>
+        <a class="btn btn-line" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar ahora</a>
+      </div>
+    </div>
+    <div class="stage3d">
+      <div class="floor"></div>
+      <canvas id="dumbbell" aria-label="Mancuerna en 3D"></canvas>
+      <div class="badge24"><strong>24 h</strong><small>Magaluf y Palma, todos los días</small></div>
+      <span class="hint">Arrastra para girar</span>
+    </div>
+  </div>
+</section>
+
+<div class="promises">
+  <div class="wrap">
+    <ul>
+      <li><svg><use href="#i-check"/></svg>Sin matrícula de alta</li>
+      <li><svg><use href="#i-shield"/></svg>Sin permanencia</li>
+      <li><svg><use href="#i-key"/></svg>Taquillas diarias gratuitas</li>
+      <li><svg><use href="#i-pin"/></svg>Palma, Magaluf y Manacor</li>
+    </ul>
+  </div>
+</div>
+
+<section class="sec" id="servicios" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="svc-title">Todo lo que necesitas para cambiar de verdad</h2>
+      <p class="lead">Da igual si empiezas hoy o llevas años entrenando. Aquí tienes el material, el espacio y las personas para llegar más lejos.</p>
+    </div>
+    <div class="services">
+      <a class="svc" data-tilt href="#reservar" data-service="Visita al centro">
+        <img loading="lazy" alt="Sala de fitness de Happygym" src="https://static.wixstatic.com/media/f5b483_18b2b236833e4779968e5ca42bade972~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_700,h_900,al_c,q_80,enc_auto/fitness.jpg">
+        <div class="body"><h3>Sala de fitness</h3><p>Musculación y cardio de última generación, con pantalla y WiFi. Peso libre y zona funcional.</p><span class="more">Ver la sala</span></div>
+        <span class="shine"></span>
+      </a>
+      <a class="svc" data-tilt href="#reservar" data-service="Entrenamiento personal">
+        <img loading="lazy" alt="Entrenador personal guiando un press de banca" src="https://static.wixstatic.com/media/8d589d5155694606981a348a27ef4f81.jpg/v1/fill/w_700,h_900,al_c,q_80,enc_auto/personal.jpg">
+        <div class="body"><h3>Entrenamiento personal</h3><p>Un entrenador dedicado a ti: plan a medida, técnica segura y seguimiento semanal.</p><span class="more">Reservar sesión</span></div>
+        <span class="shine"></span>
+      </a>
+      <a class="svc" data-tilt href="#reservar" data-service="Clase de prueba">
+        <img loading="lazy" alt="Zona de entrenamiento funcional" src="https://static.wixstatic.com/media/f5b483_0ec3cb14d2854a0885b7de5c9774f5bb~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_700,h_900,al_c,q_80,enc_auto/clases.jpg">
+        <div class="body"><h3>Clases dirigidas</h3><p>Sesiones en grupo para todos los niveles, guiadas por monitores profesionales.</p><span class="more">Probar una clase</span></div>
+        <span class="shine"></span>
+      </a>
+      <a class="svc" data-tilt href="#reservar" data-service="Estudio de composición corporal">
+        <img loading="lazy" alt="Zona de entrenamiento con suspensión" src="https://static.wixstatic.com/media/f5b483_0535f8bb80d04618ab097b3884e6e348~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_700,h_900,al_c,q_80,enc_auto/salud.jpg">
+        <div class="body"><h3>Salud y composición</h3><p>Empieza con un estudio corporal gratuito y mide cada avance desde el primer día.</p><span class="more">Pedir mi estudio</span></div>
+        <span class="shine"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec gallery" id="instalaciones" aria-labelledby="gal-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="gal-title">Así son nuestras salas</h2>
+      <p class="lead">Espacios amplios y luminosos, equipados para entrenar sin esperas. Gira la galería para recorrerlas.</p>
+    </div>
+  </div>
+  <div class="ring-stage" id="ringStage">
+    <div class="ring-floor"></div>
+    <div class="ring" id="ring">
+      <figure><img alt="Sala principal con zona de boxeo" src="https://static.wixstatic.com/media/f5b483_8af4dd77797d4e1395105b196fed37fa~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/a.jpg"><figcaption>Sala principal</figcaption></figure>
+      <figure><img alt="Zona funcional" src="https://static.wixstatic.com/media/f5b483_0ec3cb14d2854a0885b7de5c9774f5bb~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/b.jpg"><figcaption>Zona funcional</figcaption></figure>
+      <figure><img alt="Máquinas de musculación" src="https://static.wixstatic.com/media/f5b483_18b2b236833e4779968e5ca42bade972~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/c.jpg"><figcaption>Musculación</figcaption></figure>
+      <figure><img alt="Rack de mancuernas" src="https://static.wixstatic.com/media/f5b483_f284972b91f745ff9287efe07f4a8aae~mv2_d_4714_3143_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/d.jpg"><figcaption>Peso libre</figcaption></figure>
+      <figure><img alt="Zona de cardio y remo" src="https://static.wixstatic.com/media/f5b483_2fa14693d35546989619d86a0bf5b0d4~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/e.jpg"><figcaption>Cardio y remo</figcaption></figure>
+      <figure><img alt="Mancuernas en blanco y negro" src="https://static.wixstatic.com/media/f5b483_947999514ef2414d9fa5d4f599e4e137~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/f.jpg"><figcaption>Material profesional</figcaption></figure>
+      <figure><img alt="Cintas de suspensión" src="https://static.wixstatic.com/media/f5b483_0535f8bb80d04618ab097b3884e6e348~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/g.jpg"><figcaption>Suspensión</figcaption></figure>
+      <figure><img alt="Pizarra de entrenamiento" src="https://static.wixstatic.com/media/f5b483_26043e771a704b8791c275a864c0035d~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_760,h_520,al_c,q_80,enc_auto/h.jpg"><figcaption>El entreno del día</figcaption></figure>
+    </div>
+  </div>
+  <div class="ring-ctrl">
+    <button type="button" id="ringPrev" aria-label="Foto anterior"><svg><use href="#i-left"/></svg></button>
+    <button type="button" id="ringNext" aria-label="Foto siguiente"><svg><use href="#i-right"/></svg></button>
+  </div>
+  <div style="height:110px"></div>
+</section>
+
+<section class="sec" id="cuotas" aria-labelledby="plans-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="plans-title">Cuotas claras, sin letra pequeña</h2>
+      <p class="lead">Pagas mes a mes y te das de baja cuando quieras. Sin matrícula y con el estudio inicial incluido.</p>
+    </div>
+    <div class="plans">
+      <article class="plan featured" data-tilt>
+        <span class="badge">Nuevos socios · Palma</span>
+        <h3>Happy Family</h3>
+        <div class="price">39,90 €<small>/mes</small></div>
+        <p class="note">Cuota especial de lanzamiento del nuevo centro de Palma</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Acceso a Palma, Magaluf y Manacor</li>
+          <li><svg><use href="#i-check"/></svg>Estudio de composición corporal gratuito</li>
+          <li><svg><use href="#i-check"/></svg>Sin matrícula y sin permanencia</li>
+          <li><svg><use href="#i-check"/></svg>Abierto 24 horas</li>
+        </ul>
+        <a class="btn btn-accent" href="https://www.palma.happygym.es/">Hazte socio en Palma</a>
+      </article>
+      <article class="plan" data-tilt>
+        <h3>Cuota Happygym</h3>
+        <div class="price">44,90 €<small>/mes</small></div>
+        <p class="note">Precio desde, según centro y modalidad</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Sala de fitness y cardio completa</li>
+          <li><svg><use href="#i-check"/></svg>Clases dirigidas incluidas</li>
+          <li><svg><use href="#i-check"/></svg>Taquillas de uso diario gratuitas</li>
+          <li><svg><use href="#i-check"/></svg>Sin permanencia</li>
+        </ul>
+        <a class="btn btn-brand" href="https://happy-gym.provis.es/Public/ProcesoAlta/PasoSeleccionCuota.aspx">Inscribirme online</a>
+      </article>
+      <article class="plan" data-tilt>
+        <h3>Entrenamiento personal</h3>
+        <div class="price ask">A tu medida</div>
+        <p class="note">Sesiones sueltas o bonos, según tu objetivo</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Valoración inicial con tu entrenador</li>
+          <li><svg><use href="#i-check"/></svg>Plan de entrenamiento personalizado</li>
+          <li><svg><use href="#i-check"/></svg>Seguimiento de resultados</li>
+        </ul>
+        <a class="btn btn-ghost" href="#reservar" data-service="Entrenamiento personal">Pedir información</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="band-img" id="bandImg"></div>
+  <div class="wrap">
+    <blockquote>El esfuerzo es tuyo. <span>El respeto, de todos.</span></blockquote>
+    <p>En Happygym entrena gente de todas las edades y niveles. Aquí nadie te juzga: se te ayuda.</p>
+  </div>
+</div>
+
+<section class="sec centers-sec" id="centros" aria-labelledby="centers-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="centers-title">Tres centros. Un mismo nivel.</h2>
+      <p class="lead">Con tu cuota entrenas en el centro que te quede más cerca. Llámanos o escríbenos por WhatsApp y te atendemos al momento.</p>
+    </div>
+    <div class="centers">
+      <article class="center">
+        <span class="flag"><i></i>Nuevo · Abierto 24h</span>
+        <h3>Palma</h3>
+        <address>Polígono Son Castelló<br>Palma de Mallorca</address>
+        <table class="hours"><tbody>
+          <tr><td>Centro</td><td>24 horas</td></tr>
+          <tr><td>Recepción</td><td>Consultar</td></tr>
+        </tbody></table>
+        <div class="center-actions">
+          <a class="btn btn-brand" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar</a>
+          <a class="btn btn-ghost" href="https://wa.me/34971778155?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Happygym%20Palma"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Happygym+Son+Castell%C3%B3+Palma"><svg><use href="#i-pin"/></svg>Cómo llegar</a>
+        </div>
+      </article>
+      <article class="center">
+        <span class="flag"><i></i>Abierto 24h</span>
+        <h3>Magaluf</h3>
+        <address>C.C. La Vila, Av. Carlos Sáenz de Tejada 8<br>07181 Magaluf, Calvià</address>
+        <table class="hours"><tbody>
+          <tr><td>Centro</td><td>24 horas</td></tr>
+          <tr><td>Recepción, lunes a viernes</td><td>07:00 – 22:00</td></tr>
+          <tr><td>Recepción, fines de semana y festivos</td><td>09:00 – 21:00</td></tr>
+        </tbody></table>
+        <div class="center-actions">
+          <a class="btn btn-brand" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar</a>
+          <a class="btn btn-ghost" href="https://wa.me/34971778155?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Happygym%20Magaluf"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Happygym+Magaluf+Av.+Carlos+S%C3%A1enz+de+Tejada+8"><svg><use href="#i-pin"/></svg>Cómo llegar</a>
+        </div>
+      </article>
+      <article class="center">
+        <span class="flag"><i></i>Manacor</span>
+        <h3>Manacor</h3>
+        <address>Carrer de Don Joan d'Àustria 5<br>07500 Manacor</address>
+        <table class="hours"><tbody>
+          <tr><td>Lunes a viernes</td><td>06:00 – 23:00</td></tr>
+          <tr><td>Sábados y festivos</td><td>09:00 – 17:00</td></tr>
+          <tr><td>Domingos</td><td>09:00 – 14:00</td></tr>
+        </tbody></table>
+        <div class="center-actions">
+          <a class="btn btn-brand" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar</a>
+          <a class="btn btn-ghost" href="https://wa.me/34971778155?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Happygym%20Manacor"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Happygym+Manacor+Carrer+Don+Joan+d%27%C3%80ustria+5"><svg><use href="#i-pin"/></svg>Cómo llegar</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec book" id="reservar" aria-labelledby="book-title">
+  <div class="wrap">
+    <div>
+      <h2 id="book-title">Reserva tu cita</h2>
+      <p class="lead">Ven a conocer el centro, prueba una clase o empieza con tu entrenador. Elige día y hora y te confirmamos enseguida.</p>
+      <div class="direct">
+        <a href="tel:+34971778155"><svg><use href="#i-phone"/></svg><div><strong>971 778 155</strong><span>Llámanos, te atendemos personalmente</span></div></a>
+        <a href="https://wa.me/34971778155"><svg><use href="#i-wa"/></svg><div><strong>WhatsApp</strong><span>Escríbenos y te respondemos rápido</span></div></a>
+      </div>
+    </div>
+
+    <div class="form" id="formbox">
+      <form id="booking" novalidate>
+        <h3>Solicitar cita</h3>
+        <p>Menos de un minuto. Sin compromiso.</p>
+        <div class="grid2">
+          <div class="field" id="f-name">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" autocomplete="name" required>
+            <span class="err">Escribe tu nombre para poder llamarte.</span>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <span class="err">Introduce un teléfono de al menos 9 cifras.</span>
+          </div>
+        </div>
+        <fieldset class="field" id="f-center">
+          <legend>Centro</legend>
+          <div class="chips">
+            <input type="radio" name="center" id="c1" value="Palma"><label for="c1">Palma</label>
+            <input type="radio" name="center" id="c2" value="Magaluf"><label for="c2">Magaluf</label>
+            <input type="radio" name="center" id="c3" value="Manacor"><label for="c3">Manacor</label>
+          </div>
+          <span class="err">Elige el centro donde quieres la cita.</span>
+        </fieldset>
+        <div class="field" id="f-service">
+          <label for="service">Motivo de la cita</label>
+          <select id="service" name="service" required>
+            <option value="">Selecciona una opción</option>
+            <option>Visita al centro</option>
+            <option>Entrenamiento personal</option>
+            <option>Clase de prueba</option>
+            <option>Estudio de composición corporal</option>
+            <option>Información sobre cuotas</option>
+          </select>
+          <span class="err">Dinos qué te interesa.</span>
+        </div>
+        <div class="grid2">
+          <div class="field" id="f-date">
+            <label for="date">Día preferido</label>
+            <input id="date" name="date" type="date" required>
+            <span class="err">Elige un día a partir de hoy.</span>
+          </div>
+          <div class="field">
+            <label for="slot">Franja horaria</label>
+            <select id="slot" name="slot">
+              <option>Mañana (7:00 – 12:00)</option>
+              <option>Mediodía (12:00 – 16:00)</option>
+              <option>Tarde (16:00 – 20:00)</option>
+              <option>Noche (20:00 – 22:00)</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-brand" type="submit"><svg><use href="#i-cal"/></svg>Solicitar cita</button>
+        <p class="legal">Usaremos tus datos solo para gestionar esta cita. Consulta nuestra <a href="#">política de privacidad</a>.</p>
+      </form>
+
+      <div class="done" id="done" aria-live="polite">
+        <h3>Solicitud lista</h3>
+        <p>Envíala por WhatsApp y te confirmamos la hora en breve. Si lo prefieres, llámanos directamente.</p>
+        <div class="summary" id="summary"></div>
+        <div class="btns">
+          <a class="btn btn-brand" id="sendwa" href="#"><svg><use href="#i-wa"/></svg>Enviar solicitud por WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar al 971 778 155</a>
+          <button class="btn btn-ghost" type="button" id="edit">Cambiar datos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="preguntas" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="faq-title">Preguntas frecuentes</h2>
+      <p class="lead">Si tu duda no está aquí, llámanos al 971 778 155. Respondemos en el momento.</p>
+    </div>
+    <div class="faq">
+      <details><summary>¿Hay que pagar matrícula para apuntarse?</summary><p>No. Con las cuotas actuales te das de alta sin matrícula. Solo pagas tu mensualidad.</p></details>
+      <details><summary>¿Tengo permanencia?</summary><p>No hay permanencia. Puedes darte de baja cuando quieras desde el área de socios o en recepción.</p></details>
+      <details><summary>¿Puedo entrenar en los tres centros?</summary><p>Sí, según tu cuota puedes acceder a Palma, Magaluf y Manacor. Te lo explicamos en recepción o por WhatsApp.</p></details>
+      <details><summary>¿Cómo funciona el acceso 24 horas?</summary><p>Los centros de Magaluf y Palma abren las 24 horas, todos los días. Fuera del horario de recepción accedes con tu acreditación de socio.</p></details>
+      <details><summary>¿Puedo probar antes de apuntarme?</summary><p>Claro. Reserva una visita o una clase de prueba en el formulario de esta página y te enseñamos el centro.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final-title">
+  <div class="wrap">
+    <h2 id="final-title">Tu primer entreno empieza hoy</h2>
+    <div class="btns">
+      <a class="btn btn-brand" href="#reservar"><svg><use href="#i-cal"/></svg>Reservar cita</a>
+      <a class="btn btn-ghost" href="tel:+34971778155"><svg><use href="#i-phone"/></svg>971 778 155</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#inicio">HAPPY<span style="color:var(--accent)">GYM</span></a>
+        <p>Gimnasios en Palma, Magaluf y Manacor. Entrenamiento con respeto, método y resultados.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/happygym_mallorca/" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.facebook.com/happygymMallorca/" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCQmqCgBbAMGnLrCP5BWC04A" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34971778155">971 778 155</a></li>
+          <li><a href="https://wa.me/34971778155">WhatsApp</a></li>
+          <li><a href="#reservar">Reservar cita</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Centros</h4>
+        <ul>
+          <li><a href="#centros">Palma · Son Castelló</a></li>
+          <li><a href="#centros">Magaluf · Calvià</a></li>
+          <li><a href="#centros">Manacor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Socios</h4>
+        <ul>
+          <li><a href="https://happy-gym.provis.es/Login">Área de socios Magaluf</a></li>
+          <li><a href="https://happygym-manacor.provis.es/Login">Área de socios Manacor</a></li>
+          <li><a href="https://happy-gym.provis.es/Public/ProcesoAlta/PasoSeleccionCuota.aspx">Inscripción online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2016 Happygym Mallorca</span>
+      <span><a href="#">Aviso legal</a> &nbsp;·&nbsp; <a href="#">Privacidad</a> &nbsp;·&nbsp; <a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Contacto rápido">
+  <a href="tel:+34971778155"><svg><use href="#i-phone"/></svg>Llamar</a>
+  <a href="https://wa.me/34971778155"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="primary" href="#reservar"><svg><use href="#i-cal"/></svg>Reservar cita</a>
+</nav>
+
+<div class="palette" role="group" aria-label="Probar paleta de color">
+  <span>Color</span>
+  <button class="p1" data-p="esmeralda" aria-pressed="true" title="Esmeralda y cobre"></button>
+  <button class="p2" data-p="burdeos" aria-pressed="false" title="Burdeos y oro rosa"></button>
+  <button class="p3" data-p="grafito" aria-pressed="false" title="Grafito y coral"></button>
+</div>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer=matchMedia('(pointer:fine)').matches;
+
+  /* Header turns solid on scroll + parallax */
+  var top=document.getElementById('top'), heroBg=document.getElementById('heroBg'), bandImg=document.getElementById('bandImg');
+  function onScroll(){
+    var y=scrollY; top.classList.toggle('solid',y>40);
+    if(reduce) return;
+    if(y<innerHeight*1.2) heroBg.style.transform='translate3d(0,'+(y*0.3)+'px,0) scale(1.05)';
+    var r=bandImg.parentNode.getBoundingClientRect();
+    if(r.bottom>0&&r.top<innerHeight){ bandImg.style.transform='translate3d(0,'+((r.top-innerHeight/2)*-0.15)+'px,0)'; }
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* 3D tilt for cards */
+  if(finePointer&&!reduce){
+    document.querySelectorAll('[data-tilt]').forEach(function(el){
+      var max=el.classList.contains('plan')?6:10;
+      el.addEventListener('mousemove',function(e){
+        var r=el.getBoundingClientRect(), x=(e.clientX-r.left)/r.width, y=(e.clientY-r.top)/r.height;
+        el.style.transform='rotateY('+((x-.5)*max*2)+'deg) rotateX('+((.5-y)*max*2)+'deg) translateZ(10px)';
+        el.style.setProperty('--mx',(x*100)+'%'); el.style.setProperty('--my',(y*100)+'%');
+      });
+      el.addEventListener('mouseleave',function(){ el.style.transform=''; });
+    });
+  }
+
+  /* 3D gallery ring */
+  var ring=document.getElementById('ring'), stage=document.getElementById('ringStage');
+  var items=[].slice.call(ring.children), n=items.length, step=360/n, angle=0, target=0, dragging=false, lastX=0, hover=false;
+  function layout(){
+    var w=ring.offsetWidth, R=Math.round((w/2)/Math.tan(Math.PI/n))+40;
+    items.forEach(function(f,i){ f.style.transform='rotateY('+(i*step)+'deg) translateZ('+R+'px)'; });
+    ring.dataset.r=R;
+  }
+  layout(); addEventListener('resize',layout);
+  function render(){ ring.style.transform='translateZ(-'+ring.dataset.r+'px) rotateY('+angle+'deg)'; }
+  function tick(){
+    if(!dragging&&!hover&&!reduce) target-=0.06;
+    angle+=(target-angle)*0.08; render(); requestAnimationFrame(tick);
+  }
+  render(); requestAnimationFrame(tick);
+  stage.addEventListener('pointerdown',function(e){dragging=true;lastX=e.clientX;stage.setPointerCapture(e.pointerId);});
+  stage.addEventListener('pointermove',function(e){ if(!dragging) return; target+=(e.clientX-lastX)*0.3; lastX=e.clientX; });
+  stage.addEventListener('pointerup',function(){dragging=false; target=Math.round(target/step)*step;});
+  stage.addEventListener('pointercancel',function(){dragging=false;});
+  stage.addEventListener('mouseenter',function(){hover=true;}); stage.addEventListener('mouseleave',function(){hover=false;});
+  document.getElementById('ringPrev').onclick=function(){ target=Math.round(target/step)*step+step; };
+  document.getElementById('ringNext').onclick=function(){ target=Math.round(target/step)*step-step; };
+
+  /* Palette switcher */
+  var root=document.documentElement;
+  function setPalette(p){
+    root.setAttribute('data-palette',p);
+    document.querySelectorAll('.palette button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.p===p ? 'true':'false'); });
+    try{ localStorage.setItem('hg-palette',p); }catch(e){}
+    window.dispatchEvent(new CustomEvent('palettechange'));
+  }
+  try{ var saved=localStorage.getItem('hg-palette'); if(saved) setPalette(saved); }catch(e){}
+  document.querySelectorAll('.palette button').forEach(function(b){ b.addEventListener('click',function(){ setPalette(b.dataset.p); }); });
+
+  /* Booking form */
+  var form=document.getElementById('booking'), done=document.getElementById('done'), date=document.getElementById('date');
+  var today=new Date(); today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
+  var iso=today.toISOString().slice(0,10); date.min=iso;
+  document.querySelectorAll('[data-service]').forEach(function(a){
+    a.addEventListener('click',function(){ document.getElementById('service').value=a.getAttribute('data-service'); });
+  });
+  function setErr(id,bad){ document.getElementById(id).classList.toggle('invalid',bad); return !bad; }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=form.name.value.trim(), phone=form.phone.value.replace(/\D/g,'');
+    var center=(form.querySelector('input[name=center]:checked')||{}).value;
+    var service=form.service.value, d=form.date.value, slot=form.slot.value;
+    var ok=[setErr('f-name',!name),setErr('f-phone',phone.length<9),setErr('f-center',!center),setErr('f-service',!service),setErr('f-date',!d||d<iso)].every(Boolean);
+    if(!ok){ var first=form.querySelector('.invalid input, .invalid select'); if(first) first.focus(); return; }
+    var nice=new Date(d+'T12:00:00').toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'});
+    var esc=function(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
+    document.getElementById('summary').innerHTML='<strong>'+esc(service)+'</strong> en Happygym '+esc(center)+'<br>'+esc(nice)+', '+esc(slot.toLowerCase())+'<br>'+esc(name)+' · '+esc(form.phone.value.trim());
+    var msg='Hola Happygym, quiero solicitar una cita.\n\nMotivo: '+service+'\nCentro: '+center+'\nDía: '+nice+'\nFranja: '+slot+'\nNombre: '+name+'\nTeléfono: '+form.phone.value.trim();
+    document.getElementById('sendwa').href='https://wa.me/34971778155?text='+encodeURIComponent(msg);
+    form.style.display='none'; done.classList.add('show');
+    document.getElementById('formbox').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  ['name','phone','service','date'].forEach(function(n){ form[n].addEventListener('input',function(){ form[n].closest('.field').classList.remove('invalid'); }); });
+  form.querySelectorAll('input[name=center]').forEach(function(r){ r.addEventListener('change',function(){ document.getElementById('f-center').classList.remove('invalid'); }); });
+  document.getElementById('edit').addEventListener('click',function(){ done.classList.remove('show'); form.style.display=''; form.name.focus(); });
+})();
+</script>
+
+<!-- 3D hexagonal dumbbell -->
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const canvas = document.getElementById('dumbbell');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
+catch (e) { canvas.parentNode.querySelector('.hint')?.remove(); canvas.remove(); throw e; }
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
+camera.position.set(0, 0.6, 10);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(4, 6, 6); scene.add(key);
+const rim = new THREE.DirectionalLight(0xffffff, 1.4); rim.position.set(-6, 2, -4); scene.add(rim);
+
+const css = () => getComputedStyle(document.documentElement);
+const accentMat = new THREE.MeshStandardMaterial({ metalness: 0.9, roughness: 0.25 });
+const rubberMat = new THREE.MeshStandardMaterial({ color: 0x15171a, metalness: 0.25, roughness: 0.55 });
+const chromeMat = new THREE.MeshStandardMaterial({ color: 0xe8e8e8, metalness: 1, roughness: 0.12 });
+function applyPalette(){ accentMat.color.set(css().getPropertyValue('--accent').trim() || '#DDA582'); rim.color.set(css().getPropertyValue('--accent').trim() || '#ffffff'); }
+applyPalette(); addEventListener('palettechange', applyPalette);
+
+const db = new THREE.Group();
+// handle (knurled look via fine ridges)
+const handle = new THREE.Mesh(new THREE.CylinderGeometry(0.17, 0.17, 2.3, 48), chromeMat);
+handle.rotation.z = Math.PI / 2; db.add(handle);
+for (let i = -6; i <= 6; i++) {
+  const ridge = new THREE.Mesh(new THREE.TorusGeometry(0.175, 0.012, 8, 40), chromeMat);
+  ridge.rotation.y = Math.PI / 2; ridge.position.x = i * 0.11; db.add(ridge);
+}
+[-1, 1].forEach(s => {
+  const head = new THREE.Mesh(new THREE.CylinderGeometry(1.0, 1.0, 1.05, 6, 1), rubberMat);
+  head.rotation.z = Math.PI / 2; head.position.x = s * 1.78; db.add(head);
+  const band = new THREE.Mesh(new THREE.CylinderGeometry(1.025, 1.025, 0.16, 6, 1), accentMat);
+  band.rotation.z = Math.PI / 2; band.position.x = s * 1.38; db.add(band);
+  const cap = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 1.08, 40), chromeMat);
+  cap.rotation.z = Math.PI / 2; cap.position.x = s * 1.79; db.add(cap);
+  const capFace = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 1.1, 40), accentMat);
+  capFace.rotation.z = Math.PI / 2; capFace.position.x = s * 1.79; db.add(capFace);
+  const collar = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.14, 40), chromeMat);
+  collar.rotation.z = Math.PI / 2; collar.position.x = s * 1.18; db.add(collar);
+});
+db.rotation.set(0.35, -0.6, 0.18);
+scene.add(db);
+
+function resize(){
+  const w = canvas.clientWidth, h = canvas.clientHeight; if (!w || !h) return;
+  renderer.setSize(w, h, false); camera.aspect = w / h;
+  camera.position.z = w < 520 ? 12.5 : 10; camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(canvas); resize();
+
+let dragging = false, lastX = 0, lastY = 0, vy = reduce ? 0 : 0.006, vx = 0, mx = 0, my = 0;
+canvas.addEventListener('pointerdown', e => { dragging = true; lastX = e.clientX; lastY = e.clientY; canvas.setPointerCapture(e.pointerId); });
+canvas.addEventListener('pointermove', e => {
+  if (!dragging) return;
+  vy = (e.clientX - lastX) * 0.004; vx = (e.clientY - lastY) * 0.004;
+  db.rotation.y += vy * 2; db.rotation.x += vx * 2; lastX = e.clientX; lastY = e.clientY;
+});
+const release = () => { dragging = false; };
+canvas.addEventListener('pointerup', release); canvas.addEventListener('pointercancel', release);
+addEventListener('mousemove', e => { mx = e.clientX / innerWidth - 0.5; my = e.clientY / innerHeight - 0.5; });
+
+let visible = true;
+new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(canvas);
+const clock = new THREE.Clock();
+function loop(){
+  requestAnimationFrame(loop);
+  if (!visible) return;
+  const t = clock.getElapsedTime();
+  if (!dragging) {
+    vy += ((reduce ? 0 : 0.006) - vy) * 0.03; vx *= 0.92;
+    db.rotation.y += vy; db.rotation.x += vx + ((0.35 + my * 0.4) - db.rotation.x) * 0.02;
+  }
+  db.position.y = reduce ? 0 : Math.sin(t * 1.2) * 0.12;
+  db.rotation.z = 0.18 + mx * 0.15;
+  renderer.render(scene, camera);
+}
+loop();
+</script>
+</body>
+</html>
